@@ -1,0 +1,16 @@
+[Unit]
+Description=My Node.js Resume Website Service
+After=network.target
+
+[Service]
+# Use your actual username
+User=ec2-user
+# Set the working directory to your project root
+WorkingDirectory=/home/ec2-user/my-resume-website/my-resume-website
+# Point to your wrapper script
+ExecStart=/home/ec2-user/my-resume-website/my-resume-website/startServer.sh
+# Ensure the service restarts if it fails
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -19,5 +19,5 @@ export default defineConfig({
       '127.0.0.1'
     ],
   },
-  base: '/personal-website/', // Replace with your repo name
+  base: '/my-resume-website/', // Replace with your repo name
 })
